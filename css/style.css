@@ -27,6 +27,29 @@ Copyright © All rights Reserved
 
 ------------------------*/
 
+/*
+CODICI COLORI LOGO TRAVEL MATE
+
+-- PARTE BLU GLOBO --
+
+HTML codice: 	#194C81
+RGB codice: 	R: 25 G: 76 B: 129
+HSV: 	210.58° 80.62% 50.59%
+
+-- TRAVEL -- 
+
+HTML codice: 	#3B8EDC
+RGB codice: 	R: 59 G: 142 B: 220
+HSV: 	209.07° 73.18% 86.27%
+
+-- MATE -- 
+
+HTML codice: 	#E91261
+RGB codice: 	R: 233 G: 18 B: 97
+HSV: 	337.95° 92.27% 91.37%
+
+
+*/
 
 /* GLOBAL
 ----------------------*/
@@ -37,12 +60,12 @@ body {
 }
 
 a {
-    color: #e38cb7;
+    color: #f5387e;
 }
 
 a:hover,
 a:focus {
-    color: #d6619c;
+    color: #5ba3f0;
 }
 
 h1 {
@@ -55,13 +78,13 @@ h1 {
 h2 {
     font-size: 45px;
     font-weight: 300;
-    color: #633991;
+    color: #2f56d4;
     letter-spacing: -1px;
     margin-bottom: 1rem;
 }
 
 h3 {
-    color: #633991;
+    color: #2f56d4;
     font-size: 33px;
     font-weight: 500;
 }
@@ -69,13 +92,13 @@ h3 {
 h4 {
     font-size: 20px;
     font-weight: 500;
-    color: #633991;
+    color: #2f56d4;
 }
 
 h5 {
     font-size: 28px;
     font-weight: 300;
-    color: #633991;
+    color: #2f56d4;
     margin-bottom: 0.7rem;
 }
 
@@ -84,12 +107,16 @@ p {
 }
 
 p.lead {
-    color: #e38cb7;
+    color: #f5378e;
     margin-bottom: 2rem;
 }
 
 .text-primary {
-    color: #e38cb7 !important;
+    color: #f5378e !important;
+}
+
+.text-primary-bottom {
+    color: #ffffff !important;
 }
 
 .light-font {
@@ -105,7 +132,7 @@ p.lead {
 }
 
 .btn-outline-light:hover {
-    color: #d6619c;
+    color: #e91261
 }
 
 .btn-primary {
@@ -188,20 +215,6 @@ p.lead {
     background: linear-gradient(135deg, rgb(47, 86, 212) 0%, rgb(91, 163, 240) 100%);
 }
 
-/*
-.nav-menu.is-scrolling,
-.nav-menu.menu-is-open {
-    background-color: rgb(74, 13, 143);
-    background: -moz-linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
-    background: -webkit-linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
-    background: linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
-    -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
-}
-*/
-
-
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
     background-color: rgb(8, 58, 221);
@@ -229,7 +242,7 @@ p.lead {
     }
     .navbar-nav>.nav-item>.nav-link.active:after {
         content: "";
-        border-bottom: 2px solid #cd99d4;
+        border-bottom: 2px solid #ffffff;
         left: 1rem;
         right: 1rem;
         bottom: 5px;
@@ -267,7 +280,7 @@ header {
 .tagline {
     font-size: 23px;
     font-weight: 300;
-    color: #ffb8f6;
+    color: #ffffff;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -297,11 +310,24 @@ header {
 /* FEATURES
 ----------------------*/
 
+/* GRADAZIONE FUCSIA - ROSA */
+/*
 .gradient-fill:before {
     color: #fc73b4;
-    background: -moz-linear-gradient(top, #9477b4 0%, #fc73b4 100%);
-    background: -webkit-linear-gradient(top, #9477b4 0%, #fc73b4 100%);
-    background: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
+    background: -moz-linear-gradient(top, #e91261 0%, #e78bad 100%);
+    background: -webkit-linear-gradient(top, #e91261 0%, #e78bad 100%);
+    background: linear-gradient(to bottom, #e91261 0%, #e74bad 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   
+*/
+
+.gradient-fill:before {
+    color: #fc73b4;
+    background: -moz-linear-gradient(top, #2f56d4 0%, #f5378e 100%);
+    background: -webkit-linear-gradient(top, #2f56d4 0%, #f5378e 100%);
+    background: linear-gradient(to bottom, #2f56d4 0%, #f5378e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -328,9 +354,9 @@ header {
     position: absolute;
     width: 3px;
     color: #fc73b4;
-    background: -moz-linear-gradient(top, #9477b4 0%, #fc73b4 100%);
-    background: -webkit-linear-gradient(top, #9477b4 0%, #fc73b4 100%);
-    background: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
+    background: -moz-linear-gradient(top, #2f56d4 0%, #f5378e 100%);
+    background: -webkit-linear-gradient(top, #2f56d4 0%, #f5378e 100%);
+    background: linear-gradient(to bottom, #2f56d4 0%, #f5378e 100%);
     top: 0;
     bottom: 0;
     left: 0;
@@ -452,8 +478,9 @@ header {
 .nav-tabs .nav-link.active {
     background: #FFF;
     border-top-width: 3px;
-    border-color: #ce75b4 #faf6fb #FFF;
-    color: #633991;
+    border-color: #2f56d4 #f6f6f6 #FFF;
+    top: 0;
+    color: #2f56d4;
 }
 
 
