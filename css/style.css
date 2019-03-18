@@ -636,11 +636,11 @@ header {
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #ff487e;
+    background: #f5378e;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-    background: #ff487e;
+    background: #f5378e;
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
 }
 
