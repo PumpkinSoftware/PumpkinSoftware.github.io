@@ -135,6 +135,13 @@ p.lead {
     color: #e91261
 }
 
+.btn-outline-light {
+    color: #f5378e;
+    background-color: #ffffff;
+    background-image: none;
+    border-color: #f5378e;
+}
+
 .btn-primary {
     border-radius: 3px;
     background-image: -moz-linear-gradient( 122deg, #e54595 0%, #fd378e 100%);
@@ -211,20 +218,20 @@ p.lead {
     padding: 1rem 0;
     transition: all 0.3s ease;
     background-color: rgb(8, 58, 221);
-    background: -moz-linear-gradient(135deg, rgb(47, 86, 212) 0%, rgb(91, 163, 240) 100%);
-    background: -webkit-linear-gradient(135deg, rgb(47, 86, 212) 0%, rgb(91, 163, 240) 100%);
-    background: linear-gradient(135deg, rgb(47, 86, 212) 0%, rgb(91, 163, 240) 100%);
+    background: -moz-linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    background: -webkit-linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
 }
 
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
     background-color: rgb(8, 58, 221);
-    background: -moz-linear-gradient(135deg, rgb(47, 86, 212) 0%, rgb(91, 163, 240) 100%);
-    background: -webkit-linear-gradient(135deg, rgb(47, 86, 212) 0%, rgb(91, 163, 240) 100%);
-    background: linear-gradient(135deg, rgb(47, 86, 212) 0%, rgb(91, 163, 240) 100%);
+    background: -moz-linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    background: -webkit-linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
     -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 23px 0px rgba(26, 20, 20, 0.425);
+    box-shadow: 0px 5px 23px 0px rgba(26, 20, 20, 0.425);
 }
 
 .nav-menu.is-scrolling {
@@ -243,7 +250,7 @@ p.lead {
     }
     .navbar-nav>.nav-item>.nav-link.active:after {
         content: "";
-        border-bottom: 2px solid #ffffff;
+        border-bottom: 2px solid #f5387e;
         left: 1rem;
         right: 1rem;
         bottom: 5px;
@@ -484,6 +491,13 @@ header {
     color: #2f56d4;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: #5ba3f0;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: #5ba3f0;
+}
 
 /* --------------------------
 :: 12.0 Team Area CSS Start
@@ -586,9 +600,10 @@ header {
 ----------------------*/
 
 .owl-carousel .owl-item img.client-img {
-    width: 110px;
-    margin: 30px auto;
-    border-radius: 50%;
+    width: 250px;
+    height: 400px;
+    margin: 70px auto;
+    /*border-radius: 50%;*/
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
 }
 
