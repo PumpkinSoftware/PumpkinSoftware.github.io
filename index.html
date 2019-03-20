@@ -50,27 +50,27 @@ URI     : https://colorlib.com
         // Update the count down every 1 second
         var x = setInterval(function() {
         
-          // Get todays date and time
-          var now = new Date().getTime();
+        // Get todays date and time
+        var now = new Date().getTime();
         
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+                                    
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Display the result in the element with id="demo"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
         
-          // Display the result in the element with id="demo"
-          document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-        
-          // If the count down is finished, write some text 
-          if (distance < 0) {
+        // If the count down is finished, write some text 
+        if (distance < 0) {
             clearInterval(x);
             document.getElementById("countdown").innerHTML = "EXPIRED";
-          }
+        }
         }, 1000);
         </script>
 </head>
@@ -187,21 +187,23 @@ URI     : https://colorlib.com
     <!-- // end .section -->
     <div class="section">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-6">
-                    <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
-                    <h2>Discover our App</h2>
-                    <p class="mb-4"> TravelMate is the app just right for you, you propose to go to an event and we find your travel buddies.<br>
-                                     Organizing a journey has never been so easy, so, what are you waiting for? World is ready to be explored.  
-                    </p>
-                    <a href="#" class="btn btn-primary">Read more</a>
-                </div>
-            </div>
-            <div class="perspective-phone">
-                <img src="images/perspective.png" alt="perspective phone" class="img-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-6">
+                <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
+                <h2>Discover our App</h2>
+                <p class="mb-4">TravelMate is the app just right for you, you propose to go to an event and we find your travel buddies.<br>
+                                Organizing a journey has never been so easy, so, what are you waiting for? World is ready to be explored.<br><br>
+                                We are five students of computer engineering at "La Sapienza" university and the project was born in 2018/2019 during  
+                                the GOOGLE WORKSHOP, held in the computer and automatic engineering faculty at "La Sapienza" university with annual recurrence. 
+                </p>
+                <a href="https://github.com/PumpkinSoftware/TravelMate" class="btn btn-primary">Read more</a>
             </div>
         </div>
+        <div class="perspective-phone">
+            <img src="images/perspective.png" alt="perspective phone" class="img-fluid">
+        </div>
+    </div>
 
     </div>
     <!-- // end .section -->
