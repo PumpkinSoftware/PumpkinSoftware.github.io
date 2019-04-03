@@ -7,6 +7,7 @@ Disallow: /README.md
 Disallow: /googlee409ef67e1319a62.html
 
 User-agent: *
+Allow: /
 Allow: /index.html
 Allow: /indexIOS.html
 Allow: /privacy.html
