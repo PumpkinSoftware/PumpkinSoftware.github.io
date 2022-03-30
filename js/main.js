@@ -8,8 +8,8 @@
     "use strict";
     
     // Set footer copyright year
-    var y = new Date().getFullYear();
-    copyright = document.getElementById("copyright")
+    const y = new Date().getFullYear();
+    const copyright = document.getElementById("copyright")
     copyright.textContent = copyright.textContent.replace("2022", y)
 
     var cfg = {
