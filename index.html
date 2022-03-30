@@ -1,821 +1,776 @@
-<!doctype html>
-<html lang="en">
-<!--
-
-Page    : index / MobApp
-Version : 1.0
-Author  : Colorlib
-URI     : https://colorlib.com
-
- -->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
 <head>
-    <title>TravelMate</title>
-    <!-- Required meta tags -->
+    <!--- basic page needs -->
+    <title>PumpkinSoftware</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="TravelMate - Mobile App">
-    <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+    <meta name="description" content="PumpkinSoftware website">
+    <meta name="keywords" content="PumpkinSoftware, pumpkinSoftware, pumpkinsoftware, pumpkin, software, mobile, app, ios, android, travelmate, travelMate, TravelMate, fly2live, fly2Live, Fly2Live, battery, 100, ready">
+    <meta name="author" content="PumpkinSoftware">
 
-    <!-- Font -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <!-- mobile specific metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-    <!-- Themify Icons -->
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <!-- Owl carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- Main css -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <style>
-        #countdown{
-          text-align: center;
-          font-size: 40px;
-          color: whitesmoke;
-          margin-top: 0px;
-        }
+    <!-- scripts -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-        #count{
-            background-color: gray
-        }
-    </style>
+    <!-- favicons -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Apr 2, 2019 12:00:00").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-        // Get todays date and time
-        var now = new Date().getTime();
-        
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-                                    
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        // Display the result in the element with id="demo"
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-        
-        // If the count down is finished, write some text 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED, APP IS ON PLAY STORE NOW!";
-        }
-        }, 1000);
-        </script>
-
+    <!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/35ba4965f9.js" crossorigin="anonymous"></script>
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="30">
-
-    <!-- Nav Menu -->
-
-    <div class="nav-menu fixed-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-light navbar-expand-lg">
-                        <a class="navbar-brand" href="https://github.com/PumpkinSoftware/TravelMate"><img src="images/logo_app.png" class="img-fluid" alt="logo" height="150" width="150"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-                        <div class="collapse navbar-collapse" id="navbar">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#features">FEATURES</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#howto">HOW TO</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#team">TEAM</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#gallery">GALLERY</a></li>
-                                <!--<li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>-->
-                                <li class="nav-item"><a href="#download" class="btn btn-primary my-3 my-sm-0 ml-lg-3">Download</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- COUNTDOWN
-    <div class="section bg-gradient">
-        <div class="container">
-            <div class="call-to-action">
-                <h2>App Countdown</h2>
-                <p class="text-primary-bottom">Here You are the countdown of the app, in almost a week you'll get it!!!. </p>
-                <div id="count">
-                    <p id = 'countdown'></p>
-                </div>
-            </div>
+<body id="top">
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+              <h3>PumpkinSoftware</h3>
+            </a>
         </div>
 
-    </div>
-	-->
-    <header class="bg-gradient" id="home">
-        <div class="container mt-5">
-            <h1>TravelMate - Find your travel buddies</h1>
-            <p class="tagline"> 
-                <p class="tagline">What is TravelMate?</p> 
-                <p class="tagline" style="text-align:justify">
-                <br> A mobile application that connects students from 18 to 25 who want to go to an event in italy. <br><br>
-                You can choose your event, find the best fit of travel mate in advance with low budget!! <br><br>
-                <!--TravelMate is the app just right for you, you propose to go to an event and we find your travel buddies. <br><br>
-                Organizing a journey has never been so easy, so, what are you waiting for? World is ready to be explored.<br>-->
+        <nav class="header-nav">
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+
+                <ul class="header-nav__list">
+                    <li class="current">
+                      <a class="smoothscroll" href="#home">Home</a>
+                    </li>
+                    <li>
+                      <a class="smoothscroll" href="#about">About Us</a>
+                    </li>
+                    <li>
+                      <a class="smoothscroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                      <a class="smoothscroll" href="#products">Products</a>
+                    </li>
+                    <li>
+                      <a class="smoothscroll" href="#technologies">Technologies</a>
+                    </li>
+                    <!--<li>
+                      <a class="smoothscroll" href="#contact">Contact</a>
+                    </li>-->
+                </ul>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a class="link-facebook" href="https://www.facebook.com/PumpkinSoftware/">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-twitter" href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-instagram" href="https://www.instagram.com/pumpkinsoftware/">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+    </header> 
+    <!-- end header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/origin.jpg" data-natural-width=2500 data-natural-height=1500 data-position-y=center><!---->
+    <!--<section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/coming_soon/bg_11.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>-->
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <!-- home-content -->
+        <div class="home-content">
+            <div class="row home-content__main">
+
+                <h3>Welcome to PumpkinSoftware</h3>
+                <h1>
+                    We are a software house <br>
+                    made up of young engineers <br>
+                    focused on web and <br>
+                    mobile development
+                </h1>
+
+                <div class="home-content__buttons">
+                    <!--<a href="#contact" class="smoothscroll btn btn--stroke">
+                        Start a Project
+                    </a>-->
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        About Us
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+        </div> 
+        <!-- end home-content -->
+
+        <!-- home-social -->
+        <ul class="home-social">
+            <li>
+                <a class="link-facebook" href="https://www.facebook.com/PumpkinSoftware/">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a class="link-twitter" href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a class="link-instagram" href="https://www.instagram.com/pumpkinsoftware/">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <span>Instagram</span>
+                </a>
+            </li>
+        </ul>
+        <!-- end home-social -->
+    </section>
+     <!-- end home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <!--<h3 class="subhead subhead--dark">About Us</h3>-->
+                <h3 class="subhead subhead--light">About Us</h3>
+                <h1 class="display-1 display-1--light">We are PumpkinSoftware</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                  We are a brilliant group of young computer engineers who mainly develop mobile applications.
+                  We met at the La Sapienza University of Rome in 2016, and two years later, we decided to create a team.
+                  We are involved in a continuous process of innovation and improvement to always offer the best experience to our customers and users
                 </p>
-            </p>
-        </div>
-        <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid"></div>
-    </header>
+            </div>
+        </div> <!-- end about-desc -->
 
-
-    <!-- Sezione che possiamo anche togliere --> 
-    <div class="client-logos my-5">
-        <div class="container text-center">
-            <!--<img src="images/client-logos.png" alt="client logos" class="img-fluid">-->
-        </div>
-    </div>
-
-    <div class="section light-bg" id="features">
-
-
-        <div class="container">
-
-            <div class="section-title">
-                <small>HIGHLIGHTS</small>
-                <h3>Target</h3>
+        <div class="row about-stats stats block-1-3 block-m-1-3 block-mob-full" data-aos="fade-up">
+            <div class="col-block stats__col">
+                <div class="stats__count">3</div>
+                <h5>Apps</h5>
             </div>
 
+            <div class="col-block stats__col">
+                <div style="font-size: 8.4rem; line-height: 1; color: #FFFFFF;">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h5>
+                  Winner of the <br/>
+                  Google Workshop on <br/>
+                  Cloud and Web <br/>
+                  Application Development <br/>
+                  2018/2019
+                </h5>
+            </div>
 
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-user gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Students</h4>
-                                    <p class="card-text">Our application is aimed at young people. Mostly university students between the ages of 18 and 25.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-ticket gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Events</h4>
-                                    <p class="card-text">It is very common for a university student to attend a concert, an art show, a technological event.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-money gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Low Budget </h4>
-                                    <p class="card-text">Traveling by train or car, in Italy, is the most convenient choice in terms of money spent.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">100+</div>
+                <h5>Downloads</h5>
             </div>
         </div>
-    </div>
-    <!-- // end .section -->
-    <div class="section">
 
-    <div class="container">
+        <div class="about__line"></div>
+    </section>
+    <!-- end about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--services">What We Do</h3>
+                <h1 class="display-2">We have everything you need to launch and grow your business</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">State-of-the-Art Technology</h3>
+                    <p>
+                        Engage a continuous process of innovation side by side
+                        with established well-known development methodologies
+                        to develop powerful products where customer satisfaction comes first
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Cloud Solutions</h3>
+                    <p>
+                      Realize ubiquitous distributed and cross-platform solutions
+                      employing ad-hoc infrastructures and architectures
+                      to meet customer demand with particular attention to the Quality of Service provided
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Design & User Experience</h3>
+                    <p>
+                      Give value to our users by designing an intuitive User Interface side by side
+                      with the customer to bring its idea to life and get a better User Experience
+                      that makes the difference between a good app and an optimal one
+                      <!--<br>
+                      <span style="text-align: left"><i class="fas fa-check"></i> &#8195;User stories</span>
+                      <br>
+                      <span style="text-align: left"><i class="fas fa-check"></i> &#8195;Prototypes</span>-->
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Maintenance</h3>
+                    <p>
+                      Start a long-term cycle of years of apps and websites maintenance to support the customer
+                      to be competitive across the entire software lifecycle
+                      with regular updates and patches through annual subscription plans
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-mobile"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Mobile Development</h3>
+                    <p>
+                      Build high-performance apps for Android and iOS based on the Native App Development approach
+                      to be a guarantee of quality and professionalism on the market both for customers and users
+                      <!--<br>
+                      <span style="text-align: left"><i class="fas fa-check"></i> &#8195;Android</span>
+                      <br>
+                      <span style="text-align: left"><i class="fas fa-check"></i> &#8195;iOS</span>-->
+                    </p>
+                    <!--<i class="icon-appleinc"></i>
+                    <i class="icon-android"></i>-->
+                    <!--<i class="fab fa-apple"></i><br>
+                    <i class="fab fa-android"></i>-->
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                  <!--<i class="fas fa-globe-europe"></i>-->
+                  <!--<i class="fas fa-globe"></i>-->
+                  <i class="fas fa-globe-americas"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Web Development</h3>
+                    <p>
+                      Build high-performance, responsive and stylish websites or web apps
+                      such as institutional or business webpages, e-commerce, blogs or
+                      whatever the customer has in mind by employing our engineering skills
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+    </section>
+    <!-- end services -->
+
+
+    <!-- products
+    ================================================== -->
+    <section id="products" class="s-works">
+
+        <div class="intro-wrap">
+
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Our Products</h3>
+                    <h1 class="display-2 display-2--light">We love what we do,<br>check out our latest works</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <!--<a href="images/apps/app_B100R@2x.png" class="thumb-link" title="Battery 100% Ready" data-size="1024x1024">
+                                    <img src="images/apps/app_B100R.png"
+                                         srcset="images/apps/app_B100R.png 1x, images/apps/app_B100R@2x.png 2x" alt="">
+                                </a>-->
+                                <a href="pages/battery100ready.html" class="thumb-link" title="Battery 100% Ready">
+                                    <img src="images/apps/app_B100R.png"
+                                         srcset="images/apps/app_B100R.png 1x, images/apps/app_B100R@2x.png 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Battery 100% Ready
+                                </h3>
+                                <p class="item-folio__cat">
+                                    App
+                                </p>
+                            </div>
+
+                            <!--<a href="battery100%ready.html" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>-->
+
+                            <div class="item-folio__caption">
+                                <p>
+                                  Be notified when the battery of your device is fully charged, to save and extend its health.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <!--<a href="images/apps/app_F2L@2x.png" class="thumb-link" title="Fly2Live" data-size="1024x1024">
+                                    <img src="images/apps/app_F2L.png"
+                                         srcset="images/apps/app_F2L.png 1x, images/apps/app_F2L@2x.png 2x" alt="">
+                                </a>-->
+                                <a href="pages/fly2live.html" class="thumb-link" title="Fly2Live">
+                                    <img src="images/apps/app_F2L.png"
+                                         srcset="images/apps/app_F2L.png 1x, images/apps/app_F2L@2x.png 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Fly2Live
+                                </h3>
+                                <p class="item-folio__cat">
+                                    App
+                                </p>
+                            </div>
+
+                            <!--<a href="fly2live.html" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>-->
+
+                            <div class="item-folio__caption">
+                                <p>
+                                  Fly among buildings and vehicles to survive in a crazy and endless race.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <!--<a href="images/apps/app_TM@2x.png" class="thumb-link" title="TravelMate" data-size="1024x1024">
+                                    <img src="images/apps/app_TM.png"
+                                         srcset="images/apps/app_TM.png 1x, images/apps/app_TM@2x.png 2x" alt="">
+                                </a>-->
+                                <a href="pages/travelmate.html" class="thumb-link" title="TravelMate">
+                                    <img src="images/apps/app_TM.png"
+                                         srcset="images/apps/app_TM.png 1x, images/apps/app_TM@2x.png 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    TravelMate
+                                </h3>
+                                <p class="item-folio__cat">
+                                    App
+                                </p>
+                            </div>
+
+                            <!--<a href="travelmate.html" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>-->
+
+                            <div class="item-folio__caption">
+                                <p>
+                                  A mobile application that connects students from 18 to 25 who want to go to an event in Italy.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
         <div class="row">
-            <div class="col-lg-6 offset-lg-6">
-                <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
-                <h2>Discover our App</h2>
-                <p class="mb-4">TravelMate is the app just right for you, you propose to go to an event and we find your travel buddies.<br>
-                                Organizing a journey has never been so easy, so, what are you waiting for? World is ready to be explored.<br><br>
-                                We are five students of computer engineering at "La Sapienza" university and the project was born in 2018/2019 during  
-                                the GOOGLE WORKSHOP, held in the computer and automatic engineering faculty at "La Sapienza" university with annual recurrence. 
-                </p>
-                <a href="https://github.com/PumpkinSoftware/TravelMate" class="btn btn-primary">Read more</a>
-            </div>
-        </div>
-        <div class="perspective-phone">
-            <img src="images/perspective.png" alt="perspective phone" class="img-fluid">
-        </div>
-    </div>
-
-    </div>
-    <!-- // end .section -->
-
-
-    <div class="section light-bg">
-        <div class="container">
-            <div class="section-title">
-                <small>FEATURES</small>
-                <h3>What can you do with TravelMate</h3>
-            </div>
-
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#join">Formation Group</a>
-                </li>
-                <!--
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#schedule">Schedule</a>
-                </li>
-                -->
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#review">Review User System</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#chat">Chat Communication</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="join">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                        <div>
-
-                            <h2>Create your travel plan</h2>
-                            <p class="lead">Or Join other one.</p>
-                            <p>You can create your personalized trip to be able to participate in your favorite event. You can set the place, the date of departure and arrival, the budget and choose whether to use the train or the car.
-                                Once finished, other people will be able to see your travel plan and decide whether to join you</p>
-                            <p>  Otherwise, if you have already found a travel program that satisfies you, you can decide to join a trip organized by another person
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                <div class="tab-pane fade" id="schedule">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div>
-                            <h2>Scheduling when you want</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills. </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,
-                            </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor
-                                sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.
-                            </p>
-                        </div>
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                    </div>
-                </div>
-                -->
-                <div class="tab-pane fade" id="review">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                        <div>
-                            <h2>Find the best fit of travel buddy in advance.</h2>
-                            <p class="lead">It's not easy to trust.</p>
-                            <p>After completing a trip you can review your companions.
-                                You can describe their behaviors and habits, so you can give feedback to everyone who travels after you. 
-                            </p>
-                            <p> It will be easier to know in advance if you are leaving with like-minded people.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="chat">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div>
-                            <h2>Chat System.</h2>
-                            <p class="lead">Communicating is easy.</p>
-                            <p> To facilitate the organization it will be possible to use the chat. The travel groups will have a dedicated chat that will facilitate communication between users</p>
-                            <p>  
-                            </p>
-                        </div>
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-    <!-- // end .section -->
-
-    <!-- HOW TO 1 -->
-    <div class="section light-bg" id="howto">
-        <div class="container">
-            <div class="section-title">
-                <div class="row">
-                <!--<div class="box-icon"><span class="ti-help gradient-fill ti-3x"></span></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
-                <h2>How to download TravelMate</h2>
-                </div>
-            </div>
-            <!--
-            <div class="row">
-                
-                <div class="col-md-6 d-flex align-items-center">
-                    <ul class="list-unstyled ui-steps">
-                        <li class="media">
-                            <div class="circle-icon mr-4">1</div>
-                            <div class="media-body">
-                                <h5>Set your smartphone</h5>
-                                <p><font color="#f5378e">1.1</font> Go on Settings, then tap on <b>Security & Privacy</b>.</p>
-                                <p><font color="#f5378e">1.2</font> Go on <b>Install unknown apps</b></p>
-                                <p><font color="#f5378e">1.3</font> Scroll until you reach your browser app. Tap on it and turn on <b>Allow app installs</b></p>
-                            </div>
-                        </li>
-                    </ul>    
-                </div>
-                
-                <div class="col-md-6">
-                    <div class="testimonials owl-carousel">
-                        <div class="testimonials-single">
-                            <img src="images/howto2.jpg" alt="client" class="client-img">
-                            
-                            <p class="text-primary">1.1</p>
-                        </div>
-                        <div class="testimonials-single">
-                            <img src="images/howto3.jpg" alt="client" class="client-img">
-                            <p class="text-primary">1.2</p>
-                        </div>
-                        <div class="testimonials-single">
-                            <img src="images/howto4.jpg" alt="client" class="client-img">
-                            <p class="text-primary">1.3</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-        </div>
-   
-    <!-- HOW TO 2 -->
-    
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
-                        <ul class="list-unstyled ui-steps">
-                            <li class="media">
-                                <div class="circle-icon mr-4">1</div>
-                                <div class="media-body">
-                                    <h5>Download the app</h5>
-                                    <p><font color="#f5378e">1.1</font> Scroll down to the download button and tap on it.</p>
-                                    <p><font color="#f5378e">1.2</font> You will be redirected to the PlayStore page, tap on <b>install</b> and wait for it.</p>
-                                </div>
-                            </li>
-                        </ul>    
-                    </div>
-                    <div class="col-md-6">
-                        <div class="testimonials owl-carousel">
-                            <div class="testimonials-single">
-                                <img src="images/howto8.jpg" alt="client" class="client-img">
-                                
-                                <p class="text-primary">1.2</p>
-                            </div>
-                            <!--
-                            <div class="testimonials-single">
-                                <img src="images/howto3.jpg" alt="client" class="client-img">
-                                <p class="text-primary">2.2</p>
-                            </div>
-                            -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    <!-- HOW TO 3 -->
-    
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
-                        <ul class="list-unstyled ui-steps">
-                            <li class="media">
-                                <div class="circle-icon mr-4">2</div>
-                                <div class="media-body">
-                                    <h5>Enjoy</h5>
-                                    <p>You're ready to start travelling.</p>
-                                </div>
-                            </li>
-                        </ul>    
-                    </div>
-                    <div class="col-md-6">
-                        <div class="testimonials owl-carousel">
-                            <div class="testimonials-single">
-                                <img src="images/howto7.jpg" alt="client" class="client-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="google-play">
+                <a href="https://play.google.com/store/apps/dev?id=8946420972772762364&hl=en_US&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                    <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"/>
+                </a>
             </div>
         </div>
 
+    </section> <!-- end s-works -->
 
-    <!--
-    <div class="section light-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 d-flex align-items-center">
-                    <ul class="list-unstyled ui-steps">
-                        <li class="media">
-                            <div class="circle-icon mr-4">1</div>
-                            <div class="media-body">
-                                <h5>Create an Account</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem </p>
-                            </div>
-                        </li>
-                        <li class="media my-4">
-                            <div class="circle-icon mr-4">2</div>
-                            <div class="media-body">
-                                <h5>Share with friends</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem eveniet</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <div class="circle-icon mr-4">3</div>
-                            <div class="media-body">
-                                <h5>Enjoy your life</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/iphonex.png" alt="iphone" class="img-fluid">
-                </div>
 
+    <!-- technologies
+    ================================================== -->
+    <section id="technologies" class="s-clients">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--clients">Our Technologies</h3>
+                <h1 class="display-2">We design software for mobile</h1>
             </div>
-
         </div>
 
-    </div>
-    -->
-
-    <!-- SEZIONE TEAM -->
-    <div class="section" id="team">
-        <div class="container">
-            <div class="section-title">
-                <small>TEAM</small>
-                <h3>Teamwork</h3>
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-four">
+                <a title="Android" class="clients__slide">
+                  <img width="140" height="140" src="images/brands/android.png" />
+                </a>
             </div>
-            <!--
-            <div class="testimonials owl-carousel">
-                <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
-                    <blockquote class="blockquote">Uniquely streamline highly efficient scenarios and 24/7 initiatives. Conveniently embrace multifunctional ideas through proactive customer service. Distinctively conceptualize 2.0 intellectual capital via user-centric partnerships.</blockquote>
-                    <h5 class="mt-4 mb-2">Crystal Gordon</h5>
-                    <p class="text-primary">United States</p>
-                </div>
-                <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
-                    <blockquote class="blockquote">Uniquely streamline highly efficient scenarios and 24/7 initiatives. Conveniently embrace multifunctional ideas through proactive customer service. Distinctively conceptualize 2.0 intellectual capital via user-centric partnerships.</blockquote>
-                    <h5 class="mt-4 mb-2">Crystal Gordon</h5>
-                    <p class="text-primary">United States</p>
-                </div>
-                <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
-                    <blockquote class="blockquote">Uniquely streamline highly efficient scenarios and 24/7 initiatives. Conveniently embrace multifunctional ideas through proactive customer service. Distinctively conceptualize 2.0 intellectual capital via user-centric partnerships.</blockquote>
-                    <h5 class="mt-4 mb-2">Crystal Gordon</h5>
-                    <p class="text-primary">United States</p>
-                </div>
+            <div class="col-four">
+                <a title="iOS" class="clients__slide">
+                  <img width="140" height="140" src="images/brands/apple.png" />
+                </a>
             </div>
-            -->
-
-            <div class="row">
-                <div class="col">
-                    <img src="images/logo_team.png" alt="" width="300" height="300">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="images/team2.png" alt="" width="255" height="225">
-                            <!--
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            -->
-                        </div>
-                        <div class="member-text">
-                            <h4>Romeo Bertoldo </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="images/team4.png" alt="" width="255" height="225">
-                            <!--
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            -->
-                        </div>
-                        <div class="member-text">
-                            <h4>Ivan Fardin </h4>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-four">
+                <a title="Web" class="clients__slide">
+                  <img width="140" height="140" src="images/brands/web.png" />
+                </a>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="images/team5.png" alt="" width="255" height="225">
-                            <!--
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            -->
-                        </div>
-                        <div class="member-text">
-                            <h4>Alessandro Appolloni</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="images/team3.png" alt="" width="255" height="225">
-                            <!--
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            -->
-                        </div>
-                        <div class="member-text">
-                            <h4>Stefano Fusco</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="images/team1.jpg" alt="" width="255" height="225">
-                            <!--
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            -->
-                        </div>
-                        <div class="member-text">
-                            <h4>Andrea Asta</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
         </div>
 
-    </div>
-    <!-- // end .section -->
-
-    <div class="section light-bg" id="gallery">
-        <div class="container">
-            <div class="section-title">
-                <small>GALLERY</small>
-                <h3>App Screenshots</h3>
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-2">We deploy on main cloud services</h1>
             </div>
-
-            <div class="img-gallery owl-carousel owl-theme">
-                <img src="images/screen1b.png" alt="image">
-                <img src="images/screen2b.png" alt="image">
-                <img src="images/screen3b.png" alt="image">
-                <img src="images/screen4b.png" alt="image">
-                <img src="images/screen5b.png" alt="image">
-                <img src="images/screen6b.png" alt="image">
-            </div>
-
         </div>
 
-    </div>
-    <!-- // end .section -->
-
-
-
-    <!--
-    <div class="section" id="pricing">
-        <div class="container">
-            <div class="section-title">
-                <small>PRICING</small>
-                <h3>Upgrade to Pro</h3>
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-four">
+                <a title="AWS" class="clients__slide">
+                  <img width="140" height="140" src="images/brands/aws.png" />
+                </a>
             </div>
-
-            <div class="card-deck">
-                <div class="card pricing">
-                    <div class="card-head">
-                        <small class="text-primary">PERSONAL</small>
-                        <span class="price">$14<sub>/m</sub></span>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <div class="list-group-item">10 Projects</div>
-                        <div class="list-group-item">5 GB Storage</div>
-                        <div class="list-group-item">Basic Support</div>
-                        <div class="list-group-item"><del>Collaboration</del></div>
-                        <div class="list-group-item"><del>Reports and analytics</del></div>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary btn-lg btn-block">Choose this Plan</a>
-                    </div>
-                </div>
-                <div class="card pricing popular">
-                    <div class="card-head">
-                        <small class="text-primary">FOR TEAMS</small>
-                        <span class="price">$29<sub>/m</sub></span>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <div class="list-group-item">Unlimited Projects</div>
-                        <div class="list-group-item">100 GB Storage</div>
-                        <div class="list-group-item">Priority Support</div>
-                        <div class="list-group-item">Collaboration</div>
-                        <div class="list-group-item">Reports and analytics</div>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary btn-lg btn-block">Choose this Plan</a>
-                    </div>
-                </div>
-                <div class="card pricing">
-                    <div class="card-head">
-                        <small class="text-primary">ENTERPRISE</small>
-                        <span class="price">$249<sub>/m</sub></span>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <div class="list-group-item">Unlimited Projects</div>
-                        <div class="list-group-item">Unlimited Storage</div>
-                        <div class="list-group-item">Collaboration</div>
-                        <div class="list-group-item">Reports and analytics</div>
-                        <div class="list-group-item">Web hooks</div>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary btn-lg btn-block">Choose this Plan</a>
-                    </div>
-                </div>
+            <div class="col-four">
+                <a title="Google Cloud" class="clients__slide">
+                  <img width="140" height="140" src="images/brands/google_cloud.png" />
+                </a>
             </div>
-            
-
-
+            <div class="col-four">
+                <a title="Microsoft Azure" class="clients__slide">
+                  <img width="140" height="140" src="images/brands/azure.png" />
+                </a>
+            </div>
         </div>
 
-    </div>
-    -->
-    
-    <!-- FAQ SECTION
-    <div class="section pt-0">
-        <div class="container">
-            <div class="section-title">
-                <small>FAQ</small>
-                <h3>Frequently Asked Questions</h3>
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-2">We develop with skills</h1>
             </div>
+        </div>
 
-            <div class="row pt-4">
-                <div class="col-md-6">
-                    <h4 class="mb-3">Can I try before I buy?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
-                    <h4 class="mb-3">What payment methods do you accept?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="clients">
 
-                </div>
-                <div class="col-md-6">
-                    <h4 class="mb-3">Can I change my plan later?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
-                    <h4 class="mb-3">Do you have a contract?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+                    <a title="Angular" class="clients__slide"><img src="images/skills/angular.png" /></a>
+                    <a title="C" class="clients__slide"><img src="images/skills/c.png" /></a>
+                    <a title="C++" class="clients__slide"><img src="images/skills/c++.png" /></a>
+                    <a title="CSS" class="clients__slide"><img src="images/skills/css3.png" /></a>
+                    <a title="HTML" class="clients__slide"><img src="images/skills/html5.png" /></a>
+                    <a title="Java" class="clients__slide"><img src="images/skills/java.png" /></a>
+                    <a title="Javascript" class="clients__slide"><img src="images/skills/javascript.png" /></a>
+                    <a title="Kotlin" class="clients__slide"><img src="images/skills/kotlin.png" /></a>
+                    <a title="NodeJS" class="clients__slide"><img src="images/skills/nodejs.png" /></a>
+                    <a title="Python" class="clients__slide"><img src="images/skills/python.png" /></a>
+                    <a title="SQL" class="clients__slide"><img src="images/skills/sql.png" /></a>
+                    <a title="Swift" class="clients__slide"><img src="images/skills/swift.png" /></a>
 
                 </div>
             </div>
         </div>
+    </section>
+    <!-- end technologies -->
 
-    </div>
-    -->
 
-    <div class="section bg-gradient" id="download">
-        <div class="container">
-            <div class="call-to-action">
+    <!-- contact
+    ================================================== -->
+    <!--<section id="contact" class="s-contact">
 
-                <div class="box-icon"><span class="ti-download gradient-fill ti-3x"></span></div>
-                <h2>Download Here</h2>
-                <p class="text-primary-bottom">Available for Android on Google Play Store.</p>
-                <div class="my-4">
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
 
-                    <!--<a href="#" class="btn btn-light"><img src="images/appleicon.png" alt="icon"> App Store</a>-->
-                    <a href="https://play.google.com/store/apps/details?id=com.pumpkinsoftware.android.travelmate" class="btn btn-light"><img src="images/playicon.png" alt="icon"> Google play</a>
-                </div>
-                <p class="text-primary-bottom"><small><i>Requirements: Android 4.4 and above. </i></small></p>
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contact Us</h3>
+                <h1 class="display-2 display-2--light">Reach out for a new project</h1>
             </div>
         </div>
 
-    </div>
-    <!-- // end .section -->
+        <div class="row contact-content" data-aos="fade-up">
 
-    <div class="light-bg py-5" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center text-lg-left">
-                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> Rome, Italy</p>
-                    <div class=" d-block d-sm-inline-block">
-                        <p class="mb-2">
-                            <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:pumpkin.software.italy@gmail.com">pumpkin.software.italy@gmail.com</a>
+            <div class="contact-primary">
+
+                <h3 class="h6">Send Us A Message</h3>
+
+                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                    <fieldset>
+
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </fieldset>
+                </form>-->
+
+                <!-- contact-warning -->
+                <!--<div class="message-warning">
+                    Something went wrong. Please try again.
+                </div>-->
+
+                <!-- contact-success -->
+                <!--<div class="message-success">
+                    Your message was sent, thank you!<br>
+                </div>
+
+            </div>--> <!-- end contact-primary -->
+
+            <!--<div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                    <div class="cinfo">
+                        <h5>Where we are</h5>-->
+                        <!--<p>
+                            1600 Amphitheatre Parkway<br>
+                            Mountain View, CA<br>
+                            94043 US
+                        </p>-->
+                        <!--<p>
+                          Rome, Italy
                         </p>
                     </div>
-                    <!--
-                    <div class="d-block d-sm-inline-block">
-                        <p class="mb-0">
-                            <span class="ti-headphone-alt mr-2"></span> <a href="tel:51836362800">518-3636-2800</a>
+
+                    <div class="cinfo">
+                        <h5>Email us at</h5>
+                        <p>pumpkin.software.customers@gmail.com</p>
+                    </div>-->
+
+                    <!--<div class="cinfo">
+                        <h5>Call Us At</h5>
+                        <p>
+                            Phone: (+63) 555 1212<br>
+                            Mobile: (+63) 555 0100<br>
+                            Fax: (+63) 555 0101
                         </p>
-                    </div>
-                    -->
+                    </div>-->
+
+                    <!--<ul class="contact-social">
+                        <li>
+                            <a class="link-facebook" href="https://www.facebook.com/PumpkinSoftware/">
+                              <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-twitter" href="#">
+                              <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-instagram" href="https://www.instagram.com/pumpkinsoftware/">
+                              <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>--> <!-- end contact-social -->
+                    <!--</ul>
+
+                </div>--> <!-- end contact-info -->
+            <!--</div>--> <!-- end contact-secondary -->
+
+        <!--</div>--> <!-- end contact-content -->
+
+    <!--</section>--> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <!--<div class="row footer-main">
+            <div class="col-six tab-full left footer-desc">
+                <div class="footer-logo"></div>
+                Privacy and Cookie Policy
+            </div>
+
+            <div class="col-six tab-full right footer-subscribe">
+                <h4>Get Notified</h4>
+                <p>Do not miss out on app updates or our new products</p>
+
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
                 </div>
-                <div class="col-lg-6">
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/PumpkinSoftware/"><span class="ti-facebook"></span></a>
-                        <a href="https://twitter.com/_TravelMate_"><span class="ti-twitter-alt"></span></a>
-                        <a href="https://www.instagram.com/pumpkinsoftware/"><span class="ti-instagram"></span></a>
-                    </div>
+
+            </div>
+
+        </div>-->
+        <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span id="copyright">Copyright © 2022 PumpkinSoftware</span>
+                    <span>ALL RIGHTS RESERVED</span>
+                    <span>Design by PumpkinSoftware</span>
                 </div>
-            </div>
-            <div class="row">
-                    <div class="col-lg-6 text-center text-lg-left">
-                            <div class=" d-block d-sm-inline-block">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="mr-4" href="privacy.html"> Privacy Policy</a>
-                            </div>                 
-                    </div>  
-            </div>
-            <div class="row">
-                    <div class="col-lg-6 text-center text-lg-left">
-                            <div class=" d-block d-sm-inline-block">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="mr-4" href="terms.html"> Terms & Conditions</a>
-                            </div>                 
-                    </div>  
-            </div>
-            <div class="row">
-                    <div class="col-lg-6 text-center text-lg-left">
-                            <div class=" d-block d-sm-inline-block">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="mr-4" href="cookies.html"> Cookie Policy</a>
-                            </div>                 
-                    </div>  
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
-
-    </div>
-    <!-- // end .section -->
-    <footer class="my-5 text-center">
-        <!-- Copyright removal is not prohibited! -->
-        <p class="mb-2"><small> © TravelMate. ALL RIGHTS RESERVED. Design by Pumpkin Software.
-        <!--
-        <small>
-            <a href="#" class="m-2">PRESS</a>
-            <a href="#" class="m-2">TERMS</a>
-            <a href="#" class="m-2">PRIVACY</a>
-        </small>
-        -->
+        <!-- end footer-bottom -->
     </footer>
+    <!-- end footer -->
 
-    <!-- jQuery and Bootstrap -->
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+    </div> 
+    <!-- end photoSwipe background -->
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
-    <!--<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>-->
-    <!-- Plugins JS -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
-    <script type="text/javascript">var nibirumail_advice_text = "This website uses cookies, read our <a href='https://pumpkinsoftware.github.io/cookies.html' target='_blank'>cookie policy</a>. <a href='javascript:;' class='nibirumail_agreement'>Click here to close</a>";</script>
-    <script type="text/javascript" src="https://nibirumail.com/docs/scripts/nibirumail.cookie.min.js"></script>
-
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

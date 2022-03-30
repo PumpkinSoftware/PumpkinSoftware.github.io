@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+Page    : index / MobApp
+Version : 1.0
+Author  : Colorlib
+URI     : https://colorlib.com
+
+ -->
+
+<head>
+    <title>TravelMate</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="TravelMate - Mobile App">
+    <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+
+    <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/TravelMate/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/TravelMate/style.css">
+    
+    <!-- fontawesome icons -->
+	<script src="https://kit.fontawesome.com/35ba4965f9.js" crossorigin="anonymous"></script>
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="favicons/favicon_TM.ico" type="image/x-icon">
+    <link rel="icon" href="favicons/favicon_TM.ico" type="image/x-icon">
+
+    <!--
+    <style>
+        #countdown{
+          text-align: center;
+          font-size: 40px;
+          color: whitesmoke;
+          margin-top: 0px;
+        }
+
+        #count{
+            background-color: gray
+        }
+    </style>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Apr 2, 2019 12:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+        // Get todays date and time
+        var now = new Date().getTime();
+        
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+                                    
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        // Display the result in the element with id="demo"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED, APP IS ON PLAY STORE NOW!";
+        }
+        }, 1000);
+    </script>
+    -->
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+    <nav class="fixed-navbar col-full">
+        <div class="col-six md-four mob-1-2">
+            <a class="nav-item" href="https://github.com/PumpkinSoftware/TravelMate">
+                <img src="images/logo_app.png"alt="logo" height="150" width="150">
+            </a>
+        </div>
+        
+        <div class="col-six md-eight mob-1-2">
+            <ul>
+                <li class="nav-item"> <a class="nav-link active" href="#about">HOME</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#features">FEATURES</a></li>
+                <!--<li class="nav-item"> <a class="nav-link" href="#howto">HOW TO</a> </li>-->
+                <!--<li class="nav-item"> <a class="nav-link" href="#team">TEAM</a> </li>-->
+                <li class="nav-item"> <a class="nav-link" href="#gallery">GALLERY</a></li>
+                <!--<li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>
+                <li class="nav-item"><a href="#download" class="btn btn-primary my-3 my-sm-0 ml-lg-3">Download</a></li>-->
+                <li class="nav-item"><a href="#download" class="btn btn-primary">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- COUNTDOWN
+    <div class="section bg-gradient">
+        <div class="container">
+            <div class="call-to-action">
+                <h2>App Countdown</h2>
+                <p class="text-primary-bottom">Here You are the countdown of the app, in almost a week you'll get it!!!. </p>
+                <div id="count">
+                    <p id = 'countdown'></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	-->
+
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--light">Find your travel buddies</h3>
+                <h1 class="display-1 display-1--light">TravelMate</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                    What is TravelMate?<br>
+                    A mobile app that connects university students who want to participate in an event in Italy.<br><br>
+                    How does it work?<br>
+                    Propose an event and an indicative budget and find the most suitable travel mates
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+        
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid"></div>
+        </div> <!-- end about-desc -->
+    </section>
+    <!-- end about -->
+
+    
+    <!-- highlights
+    ================================================== -->
+    <section id="highlights" class="s-highlights">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--light">HIGHLIGHTS</h3>
+                <h1 class="display-1 display-1--light">Target</h1>
+            </div>
+        </div> <!-- end section-header -->
+        
+        <div class="row about-stats stats block-1-3 block-m-full block-mob-full" data-aos="fade-up">
+            <div class="col-block stats__col">
+                <div style="font-size: 8.4rem; line-height: 1; color: #2f56d4;">
+                    <i class="ti-user"></i>
+                </div>
+                <h5>Students</h5>
+                <p>Our app aims at young peers<br><br><br></p>
+            </div>
+
+            <div class="col-block stats__col">
+                <div style="font-size: 8.4rem; line-height: 1; color: #2f56d4;">
+                    <!--<i class="ti-ticket"></i>-->
+                    <i class="ti-calendar"></i>
+                </div>
+                <h5>Events</h5>
+                <p>Our app aims to form groups<br>to participate in events<br>(concerts, art exhibitions, tech events)</p>
+            </div>
+
+            <div class="col-block stats__col">
+                <div style="font-size: 8.4rem; line-height: 1; color: #2f56d4;">
+                    <i class="ti-money"></i>
+                </div>
+                <h5>Low Budget</h5>
+                <p>Our app aims to organize trips<br>on a low budget</p>
+            </div>
+        </div>        
+    </section>
+    <!-- end highlights -->
+
+    <!-- discover
+    ================================================== -->
+    <section id="discover" class="s-discover">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1 display-1--light">Discover our App</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p class="mb-4">
+                    If you want to go to an event but do not have travel companions, then TravelMate is the app just right for you!<br>
+                    Choose or propose an event, meet your new friends and organize without using other apps!<br><br>
+                    Organizing a trip has never been easier, so what are you waiting for? The world is ready to be explored
+                </p>
+                <a href="https://github.com/PumpkinSoftware/TravelMate" class="btn btn-primary">Read more</a>
+            </div>
+            <!--<div class="perspective-phone">-->
+            <div class="">
+                <img src="images/perspective.png" alt="perspective phone" class="img-fluid">
+            </div>
+        </div>
+        <!-- end about-desc -->
+        
+    </section>
+    <!-- end discover -->
+
+    <!-- features
+    ================================================== -->
+    <section id="features" class="s-features">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">Features</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row">
+            <div class="col-four tab-full">
+                <h2>Group Creation</h2>
+                <img src="images/feature_group.jpg" alt="graphic">
+                <p>
+                    Create your personalized trip to be able to participate in your favorite event.
+                    You set the place, the date of departure and arrival, the budget and choose whether to use the train or the car.
+                    Once finished, other people will be able to see your travel plan and decide whether to join you.
+                    <br>
+                    Otherwise, find a travel plan that satisfies you and join an existing group
+                </p>
+            </div>
+            
+            <div class="col-four tab-full">
+                <h2>Group Chat</h2>
+                <img src="images/feature_chat.jpg" alt="graphic">
+                <p>To facilitate the organization of the group, use the dedicated chat without the need of using third parties applications</p>
+            </div>
+
+            <div class="col-four tab-full">
+                <h2>User Review System</h2>
+                <img src="images/feature_review.jpg" alt="graphic">
+                <p>
+                    Check out the reviews of a user and find the best fit of travel buddy in advance.
+                    <br>
+                    After completing a trip you can review your companions and describe their behaviors and habits.
+                    You can give feedback to everyone who travels after you so that you can know in advance if you are leaving with like-minded people
+                </p>
+            </div>
+        </div> <!-- end row -->
+
+    </section>
+    <!-- end features -->
+
+    <!-- gallery
+    ================================================== -->
+    <section id="gallery" class="s-gallery">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--gallery">Gallery</h3>
+                <h1 class="display-2">Screenshots</h1>
+            </div>
+        </div>
+
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="screenshots">                 
+                    <a class="clients__slide"><img src="images/screen1b.png" /></a>
+                    <a class="clients__slide"><img src="images/screen2b.png" /></a>
+                    <a class="clients__slide"><img src="images/screen3b.png" /></a>
+                    <a class="clients__slide"><img src="images/screen4b.png" /></a>
+                    <a class="clients__slide"><img src="images/screen5b.png" /></a>
+                    <a class="clients__slide"><img src="images/screen6b.png" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="download" style="margin-top: 100px; text-align: center;">
+            <a href="https://play.google.com/store/apps/details?id=com.pumpkinsoftware.android.travelmate&hl=it&gl=it&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="280" class="img-fluid"/>
+            </a>
+        </div>
+    </section>
+    <!-- end gallery -->
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row footer-main">
+            <div class="col-six tab-full left footer-desc">
+                <a class="mr-4" href="privacy.html">Privacy Policy</a><br>
+                <a class="mr-4" href="terms.html">Terms & Conditions</a><br>
+                <a class="mr-4" href="cookies.html">Cookie Policy</a>
+            </div>
+
+            <div class="col-six tab-full right footer-desc">
+                <br>
+                <ul class="header-nav__social">
+                    <li>
+                        <a class="link-facebook" href="https://www.facebook.com/PumpkinSoftware/">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-twitter" href="https://twitter.com/_TravelMate_">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-instagram" href="https://www.instagram.com/pumpkinsoftware/">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span id="copyright">Copyright © 2022 PumpkinSoftware</span>
+                    <span>ALL RIGHTS RESERVED</span>
+                    <span>Design by PumpkinSoftware</span>
+                </div>
+            </div>
+        </div>
+        <!-- end footer-bottom -->
+    </footer>
+    <!-- end footer -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript">var nibirumail_advice_text = "This website uses cookies, read our <a href='https://pumpkinsoftware.github.io/cookies.html' target='_blank'>cookie policy</a>. <a href='javascript:;' class='nibirumail_agreement'>Click here to close</a>";</script>
+    <script type="text/javascript" src="https://nibirumail.com/docs/scripts/nibirumail.cookie.min.js"></script>
+
+    <!-- Default -->
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        $(".screenshots").slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            autoplay: true,
+            pauseOnFocus: false,
+            autoplaySpeed: 3500,
+            responsive: [
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    </script>
+        
+    <script>
+        $( document ).ready(function() {
+            const navLinks = document.getElementsByClassName("nav-link");
+
+            /*var activeLink = function() {
+                var a = document.getElementsByClassName("nav-link active");
+                if (a[0] != event.target) {
+                    a[0].classList.remove("active");
+                    event.target.classList.add("active");
+                }
+            };
+
+            for (var i=0; i < navLinks.length; i++) {
+                navLinks[i].addEventListener("click", activeLink, false);
+            }*/
+
+            function shrinkNavbar(scroll) {
+                if ($(window).width() > 400) {
+                    if (scroll > 80) {
+                        document.getElementsByClassName("fixed-navbar")[0].style.padding = "0px";
+                        /*for (var i=0; i < navLinks.length; i++) {
+                            navLinks[i].style.marginTop    = "0px";
+                            navLinks[i].style.marginBottom = "0px";
+                        }*/
+                    } else {
+                        document.getElementsByClassName("fixed-navbar")[0].style.padding = "8px";
+                        /*for (var i=0; i < navLinks.length; i++) {
+                            navLinks[i].style.marginTop    = "18px";
+                            navLinks[i].style.marginBottom = "-18px";
+                        }*/
+                    }
+                }
+            }
+
+            function highlightSectionNavbar(scroll) {
+                // Over first section
+                if (scroll < featuresHeight) {
+                    //console.log("over first section");
+
+                    navLinks[1].classList.remove("active");
+                    navLinks[2].classList.remove("active");
+                    navLinks[0].classList.add("active");
+                }
+                // Over second section
+                else if (scroll < galleryHeight) {
+                    //console.log("over second section");
+                    
+                    navLinks[0].classList.remove("active");
+                    navLinks[2].classList.remove("active");
+                    navLinks[1].classList.add("active");
+                }
+                // Over third section
+                else {
+                    //console.log("over third section");
+
+                    navLinks[0].classList.remove("active");
+                    navLinks[1].classList.remove("active");
+                    navLinks[2].classList.add("active");
+                }
+            }
+
+                
+            const aboutHeight    = $("#about").height() - $(window).height() * 0.16;
+            const featuresHeight = aboutHeight + $("#highlights").height() + $("#discover").height();
+            const galleryHeight  = featuresHeight + $("#features").height();
+
+            //console.log("aboutHeight: " + aboutHeight);
+            //console.log("featuresHeight: " + featuresHeight);
+            //console.log("galleryHeight: " + galleryHeight);
+
+            var scroll = $(window).scrollTop();
+            //console.log(scroll);
+
+            highlightSectionNavbar(scroll);
+            shrinkNavbar(scroll);
+
+            // React on scroll
+            $(window).scroll(function() {
+                scroll = $(window).scrollTop();
+                //console.log(scroll);
+
+                highlightSectionNavbar(scroll);
+                shrinkNavbar(scroll);
+            });
+        });
+    </script>
+</body>
+
+</html>

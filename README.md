@@ -1,1 +1,1 @@
-Website online [here](https://PumpkinSoftware.github.io)
+The PumpkinSoftware Website is available [here](https://PumpkinSoftware.github.io)
